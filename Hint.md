@@ -20,3 +20,9 @@
 ## CI/CD
 - 单元测试
 - CI/CD 环境
+
+## RssHub 集成
+- 向 RssHub 提交 PR
+
+## 订阅数据备份
+- WebDav/OneDrive/GoogleCloud 备份订阅源
