@@ -2,6 +2,7 @@
 
 ## 代码规范
 - 日志格式
+- 代码格式
 - 异常处理
 - 滚动日志文件
 - Git commit log
@@ -14,7 +15,7 @@
 - 日志
 - 前端页面
 
-## 插件
+## 插件系统
 - TinyTinyRss
 
 ## CI/CD
@@ -26,3 +27,10 @@
 
 ## 订阅数据备份
 - WebDav/OneDrive/GoogleCloud 备份订阅源
+
+## 技术栈
+- go-my-rss: golang
+  - web&api: gin
+  - orm: go-gorm/gorm
+  - db: mysql
+- gomyrssUI: react
