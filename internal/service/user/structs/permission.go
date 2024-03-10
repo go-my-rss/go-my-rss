@@ -1,6 +1,8 @@
 package structs
 
+import "gorm.io/gorm"
+
 type Permission struct {
-	Id   int    `json:"id"`
-	Name string `json:"name"`
+	Name string
+	gorm.Model
 }
