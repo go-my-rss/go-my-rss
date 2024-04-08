@@ -22,3 +22,6 @@ go.work
 
 # Jetbrain files
 .idea
+
+# MacOS
+.DS_Store
