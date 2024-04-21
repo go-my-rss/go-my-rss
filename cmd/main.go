@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/go-my-rss/go-my-rss/internal/logger"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -68,6 +69,7 @@ func setupRouter() *gin.Engine {
 }
 
 func main() {
+	defer logger.Sync()
 	r := setupRouter()
 	// Listen and Server in 0.0.0.0:8080
 	r.Run(":8080")
