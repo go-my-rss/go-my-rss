@@ -1,5 +1,7 @@
 package config
 
+var Cfg *Config
+
 type Config struct {
 	Port     string   `yaml:"port"`
 	Log      Log      `yaml:"log"`
