@@ -8,10 +8,10 @@ CREATE TABLE `users`
     `username`   VARCHAR(50) UNIQUE NOT NULL COMMENT '用户名, 唯一',
     `password`   VARCHAR(50)        NOT NULL COMMENT '密码, 明文保存',
     `email`      VARCHAR(50) COMMENT '邮箱, 明文保存',
-    `is_admin`   TINYINT(1) NOT NULL DEFAULT 0 COMMENT '是否为管理员',
+    `is_admin`   TINYINT(1)         NOT NULL DEFAULT 0 COMMENT '是否为管理员',
     `created_at` DATETIME           NOT NULL COMMENT '创建时间',
-    `updated_at` DATETIME           NOT NULL COMMENT '更新时间',
-    `delete_at`  DATETIME           NOT NULL COMMENT '删除时间'
+    `updated_at` DATETIME COMMENT '更新时间',
+    `deleted_at` DATETIME COMMENT '删除时间'
 );
 
 -- 权限表
@@ -22,7 +22,7 @@ CREATE TABLE `permissions`
     `name`       VARCHAR(50) NOT NULL COMMENT '权限名',
     `created_at` DATETIME    NOT NULL COMMENT '创建时间',
     `updated_at` DATETIME    NOT NULL COMMENT '更新时间',
-    `delete_at`  DATETIME    NOT NULL COMMENT '删除时间'
+    `deleted_at`  DATETIME    NOT NULL COMMENT '删除时间'
 );
 
 -- 用户权限关联表
@@ -33,5 +33,5 @@ CREATE TABLE `user_permission_rel`
     `permission_id` INT      NOT NULL COMMENT '权限id',
     `created_at`    DATETIME NOT NULL COMMENT '创建时间',
     `updated_at`    DATETIME NOT NULL COMMENT '更新时间',
-    `delete_at`     DATETIME NOT NULL COMMENT '删除时间'
+    `deleted_at`     DATETIME NOT NULL COMMENT '删除时间'
 );
