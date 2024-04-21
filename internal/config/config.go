@@ -15,7 +15,6 @@ type Log struct {
 
 type Database struct {
 	Host   string `yaml:"host"`
-	Port   string `yaml:"port"`
 	User   string `yaml:"user"`
 	Passwd string `yaml:"passwd"`
 	DbName string `yaml:"dbname"`
